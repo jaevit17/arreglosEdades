@@ -31,7 +31,7 @@ function pintarArregloDerecha(){
     for(let i=0;i<edadesDer.length;i++){
         contenidoTabla+="<tr>"+
                         "<td>"+
-                        "<button class='btn-mover'>⬅</button>"+
+                        "<button class='btn-mover' onclick='moverHaciaIzquierda("+i+")'>⬅</button>"+
                         "</td>"+
                         "<td>"+edadesDer[i]+"</td>"+
                         "<td>"+

@@ -23,3 +23,11 @@ function moverHaciaDerecha(indice){
     edadesIzq.splice(indice,1);
     pintarArreglos();
 }
+
+//Funcion
+function moverHaciaIzquierda(indice){
+    let edad=edadesDer[indice];
+    edadesIzq.push(edad);
+    edadesDer.splice(indice,1);
+    pintarArreglos();
+}
