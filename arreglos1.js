@@ -35,8 +35,11 @@ function pintarArregloDerecha(){
                         "</td>"+
                         "<td>"+edadesDer[i]+"</td>"+
                         "<td>"+
-                        "<button class='btn-eliminar'>Eliminar</button>"+
+                        "<button class='btn-eliminar' onclick='eliminarDerecho("+i+")'>Eliminar</button>"+
                         "</td>"+
                         "</tr>";
     }
+    let cmpTablaDer=document.getElementById("tablaDerecha");
+    cmpTablaDer.innerHTML=contenidoTabla;
 }
+

@@ -4,4 +4,8 @@ function eliminarIzquierdo(indice){
     pintarArregloIzquierda();
     }
 
-
+//Funcion
+function eliminarDerecho(indice){
+    edadesDer.splice(indice,1);
+    pintarArregloDerecha();
+}
