@@ -1,14 +1,14 @@
 //Arreglos
 let edadesIzq=[12,15];
 let edadesDer=[20,25];
-//Funcion
+//Funcion recupera valor y integra en arreglo
 function agregarEdad(){
     let cmpEdad=document.getElementById("edad");
     edad=parseInt(cmpEdad.value);
     edadesIzq.push(edad);
     pintarArregloIzquierda();
 }
-//Funcion
+//Funcion con posicion de indice crea una FILA izquierda con el valor mostrado del indice 
 function pintarArregloIzquierda(){
     let contenidoTabla="";
     for (let i=0;i<edadesIzq.length;i++){
@@ -25,7 +25,7 @@ function pintarArregloIzquierda(){
     let cmpTablaIzq=document.getElementById("tablaIzquierda");
     cmpTablaIzq.innerHTML=contenidoTabla;
 }
-//Funcion
+//Funcion con posicion de indice crea una FILA derecha con el valor mostrado del indice 
 function pintarArregloDerecha(){
     let contenidoTabla="";
     for(let i=0;i<edadesDer.length;i++){
