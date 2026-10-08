@@ -1,6 +1,6 @@
 //Arreglos
 let edadesIzq=[12,15];
-let edadesDer=[];
+let edadesDer=[20,25];
 //Funcion
 function agregarEdad(){
     let cmpEdad=document.getElementById("edad");
@@ -26,8 +26,17 @@ function pintarArregloIzquierda(){
     cmpTablaIzq.innerHTML=contenidoTabla;
 }
 //Funcion
-function eliminarIzquierdo(indice){
-    edadesIzq.splice(indice,1);
-    pintarArregloIzquierda();
+function pintarArregloDerecha(){
+    let contenidoTabla="";
+    for(let i=0;i<edadesDer.length;i++){
+        contenidoTabla+="<tr>"+
+                        "<td>"+
+                        "<button class='btn-mover'>⬅</button>"+
+                        "</td>"+
+                        "<td>"+edadesDer[i]+"</td>"+
+                        "<td>"+
+                        "<button class='btn-eliminar'>Eliminar</button>"+
+                        "</td>"+
+                        "</tr>";
     }
-
+}
