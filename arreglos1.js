@@ -18,7 +18,7 @@ function pintarArregloIzquierda(){
                         "<button class='btn-eliminar' onclick='eliminarIzquierdo("+i+")'>Eliminar</button>"+
                         "</td>"+
                         "<td>"+
-                        "<button class='btn-mover'>➜</button"+
+                        "<button class='btn-mover' onclick='moverHaciaDerecha("+i+")'>➜</button"+
                         "</td>"+
                         "</tr>";
     }
